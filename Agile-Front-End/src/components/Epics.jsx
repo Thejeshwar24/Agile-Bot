@@ -169,7 +169,7 @@ const EpicComponent = () => {
                     htmlType="submit"
                     style={{ backgroundColor: '#1890ff', borderColor: '#1890ff', width: '100%' }}
                   >
-                    {isEditMode ? 'Update Epic' : 'Submit and Go to Story'}
+                    {isEditMode ? 'Update Epic' : 'Submit'}
                   </Button>
                 </Col>
               </Row>
