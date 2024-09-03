@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  backend:
+    build: ./Agile-Back-end
+    ports:
+      - "5002:5002"
+    env_file:
+      - ./Agile-Back-end/.env
+    networks:
+      - app-network
+
+  frontend:
+    build: ./Agile-Front-end
+    ports:
+      - "5000:5000"
+    networks:
+      - app-network
+      
+networks:
+  app-network:
+    driver: bridge

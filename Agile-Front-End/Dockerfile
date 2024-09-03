@@ -1,7 +1,7 @@
 FROM node:21.4.0
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
+RUN npm install
 COPY . .
 RUN npm run build
 RUN npm install -g serve
